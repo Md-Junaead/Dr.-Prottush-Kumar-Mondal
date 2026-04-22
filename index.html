@@ -1,0 +1,2306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Dr. Prottush  Kumar Mondal - Respiratory Medicine Specialist, NIDCH Mohakhali. Book appointments at Labaid Diagnostics, Kalabagan, Dhaka." />
+  <meta name="keywords" content="Respiratory Medicine, Asthma, COPD, Chest Doctor, NIDCH, Labaid, Dhaka" />
+  <title>Dr. Prottush Kumar Mondal | Respiratory Medicine Specialist</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Hind+Siliguri:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <style>
+    /* ===========================
+       CSS VARIABLES & RESET
+    =========================== */
+    :root {
+      --primary: #0d9e7e;
+      --primary-dark: #0a7d64;
+      --primary-light: #e6f7f4;
+      --primary-glow: rgba(13, 158, 126, 0.18);
+      --accent: #f0a500;
+      --white: #ffffff;
+      --gray-50: #f8fafb;
+      --gray-100: #eef2f5;
+      --gray-200: #dde4ea;
+      --gray-400: #9aadbc;
+      --gray-600: #5a7080;
+      --gray-800: #1e3040;
+      --text: #1a2e3b;
+      --text-light: #5a7080;
+      --radius: 18px;
+      --radius-sm: 10px;
+      --shadow: 0 8px 32px rgba(13, 158, 126, 0.10);
+      --shadow-lg: 0 20px 60px rgba(13, 158, 126, 0.15);
+      --font-en: 'Poppins', sans-serif;
+      --font-bn: 'Hind Siliguri', sans-serif;
+      --transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: var(--font-en);
+      color: var(--text);
+      background: var(--white);
+      overflow-x: hidden;
+      line-height: 1.7;
+    }
+
+    body.lang-bn {
+      font-family: var(--font-bn);
+    }
+
+    body.lang-bn .en {
+      display: none !important;
+    }
+
+    body.lang-en .bn {
+      display: none !important;
+    }
+
+    body.lang-en .en {
+      display: inline;
+    }
+
+    body.lang-bn .bn {
+      display: inline;
+    }
+
+    /* ===========================
+       UTILITY
+    =========================== */
+    .container {
+      max-width: 1140px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .section {
+      padding: 90px 0;
+    }
+
+    .section-title {
+      font-size: clamp(1.6rem, 3vw, 2.2rem);
+      font-weight: 700;
+      color: var(--gray-800);
+      margin-bottom: 10px;
+    }
+
+    .section-subtitle {
+      color: var(--text-light);
+      font-size: 1rem;
+      margin-bottom: 48px;
+    }
+
+    .section-label {
+      display: inline-block;
+      background: var(--primary-light);
+      color: var(--primary);
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      padding: 5px 14px;
+      border-radius: 50px;
+      margin-bottom: 14px;
+    }
+
+    /* ===========================
+       HEADER / NAV
+    =========================== */
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      background: rgba(255, 255, 255, 0.92);
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+      border-bottom: 1px solid var(--gray-100);
+      transition: var(--transition);
+    }
+
+    header.scrolled {
+      box-shadow: 0 4px 24px rgba(13, 158, 126, 0.12);
+    }
+
+    .nav-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 72px;
+      gap: 16px;
+    }
+
+    .nav-brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+    }
+
+    .nav-brand-avatar {
+      width: 46px;
+      height: 46px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--primary), #1ac9a0);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 1.2rem;
+      flex-shrink: 0;
+      box-shadow: 0 4px 14px var(--primary-glow);
+    }
+
+    .nav-brand-text .name {
+      font-size: 0.92rem;
+      font-weight: 700;
+      color: var(--gray-800);
+      line-height: 1.2;
+    }
+
+    .nav-brand-text .spec {
+      font-size: 0.72rem;
+      color: var(--primary);
+      font-weight: 500;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    nav a {
+      text-decoration: none;
+      font-size: 0.84rem;
+      font-weight: 500;
+      color: var(--gray-600);
+      padding: 7px 13px;
+      border-radius: 8px;
+      transition: var(--transition);
+    }
+
+    nav a:hover,
+    nav a.active {
+      color: var(--primary);
+      background: var(--primary-light);
+    }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .lang-toggle {
+      display: flex;
+      background: var(--gray-100);
+      border-radius: 50px;
+      padding: 3px;
+      gap: 2px;
+    }
+
+    .lang-btn {
+      border: none;
+      background: transparent;
+      cursor: pointer;
+      font-size: 0.75rem;
+      font-weight: 600;
+      padding: 5px 12px;
+      border-radius: 50px;
+      color: var(--gray-600);
+      transition: var(--transition);
+      font-family: var(--font-en);
+    }
+
+    .lang-btn.active {
+      background: var(--primary);
+      color: white;
+      box-shadow: 0 2px 8px var(--primary-glow);
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 22px;
+      border-radius: 50px;
+      font-size: 0.84rem;
+      font-weight: 600;
+      border: none;
+      cursor: pointer;
+      text-decoration: none;
+      transition: var(--transition);
+      white-space: nowrap;
+    }
+
+    .btn-primary {
+      background: var(--primary);
+      color: white;
+      box-shadow: 0 4px 16px var(--primary-glow);
+    }
+
+    .btn-primary:hover {
+      background: var(--primary-dark);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px var(--primary-glow);
+    }
+
+    .btn-outline {
+      background: transparent;
+      color: var(--primary);
+      border: 2px solid var(--primary);
+    }
+
+    .btn-outline:hover {
+      background: var(--primary);
+      color: white;
+      transform: translateY(-2px);
+    }
+
+    /* Hamburger */
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 6px;
+    }
+
+    .hamburger span {
+      display: block;
+      width: 24px;
+      height: 2.5px;
+      background: var(--gray-800);
+      border-radius: 4px;
+      transition: var(--transition);
+    }
+
+    .hamburger.open span:nth-child(1) {
+      transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .hamburger.open span:nth-child(2) {
+      opacity: 0;
+    }
+
+    .hamburger.open span:nth-child(3) {
+      transform: rotate(-45deg) translate(5px, -5px);
+    }
+
+    /* Mobile menu */
+    .mobile-menu {
+      display: none;
+      position: fixed;
+      top: 72px;
+      left: 0;
+      right: 0;
+      background: rgba(255, 255, 255, 0.98);
+      backdrop-filter: blur(20px);
+      z-index: 999;
+      padding: 20px 24px 28px;
+      border-bottom: 1px solid var(--gray-100);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+      flex-direction: column;
+      gap: 4px;
+      animation: slideDown 0.3s ease;
+    }
+
+    .mobile-menu.open {
+      display: flex;
+    }
+
+    .mobile-menu a {
+      text-decoration: none;
+      font-size: 1rem;
+      font-weight: 500;
+      color: var(--gray-700);
+      padding: 12px 16px;
+      border-radius: var(--radius-sm);
+      transition: var(--transition);
+    }
+
+    .mobile-menu a:hover {
+      background: var(--primary-light);
+      color: var(--primary);
+    }
+
+    .mobile-menu-actions {
+      display: flex;
+      gap: 10px;
+      margin-top: 12px;
+      flex-wrap: wrap;
+    }
+
+    @keyframes slideDown {
+      from {
+        opacity: 0;
+        transform: translateY(-10px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* ===========================
+       HERO SECTION
+    =========================== */
+    .hero {
+      min-height: 100vh;
+      background: linear-gradient(145deg, #f0fdf8 0%, #e8f7f4 40%, #f8fffd 100%);
+      display: flex;
+      align-items: center;
+      padding-top: 72px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: -100px;
+      right: -100px;
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(circle, rgba(13, 158, 126, 0.12) 0%, transparent 70%);
+      border-radius: 50%;
+      pointer-events: none;
+    }
+
+    .hero::after {
+      content: '';
+      position: absolute;
+      bottom: -80px;
+      left: -80px;
+      width: 400px;
+      height: 400px;
+      background: radial-gradient(circle, rgba(240, 165, 0, 0.07) 0%, transparent 70%);
+      border-radius: 50%;
+      pointer-events: none;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero-content {
+      order: 1;
+    }
+
+    .hero-image-wrapper {
+      order: 2;
+      display: flex;
+      justify-content: center;
+    }
+
+    /* Floating decoration shapes */
+    .hero-deco {
+      position: absolute;
+      border-radius: 50%;
+      pointer-events: none;
+    }
+
+    .hero-deco-1 {
+      width: 80px;
+      height: 80px;
+      background: rgba(13, 158, 126, 0.1);
+      top: 20%;
+      right: 15%;
+      animation: float 6s ease-in-out infinite;
+    }
+
+    .hero-deco-2 {
+      width: 50px;
+      height: 50px;
+      background: rgba(240, 165, 0, 0.15);
+      top: 60%;
+      left: 5%;
+      animation: float 8s ease-in-out infinite reverse;
+    }
+
+    @keyframes float {
+
+      0%,
+      100% {
+        transform: translateY(0);
+      }
+
+      50% {
+        transform: translateY(-20px);
+      }
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: white;
+      border: 1px solid var(--primary-light);
+      color: var(--primary);
+      font-size: 0.8rem;
+      font-weight: 600;
+      padding: 7px 16px;
+      border-radius: 50px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 16px var(--primary-glow);
+    }
+
+    .hero-badge i {
+      font-size: 0.9rem;
+    }
+
+    .hero h1 {
+      font-size: clamp(2rem, 4vw, 3rem);
+      font-weight: 800;
+      color: var(--gray-800);
+      line-height: 1.2;
+      margin-bottom: 10px;
+    }
+
+    .hero h1 span {
+      color: var(--primary);
+    }
+
+    .hero-specialty {
+      font-size: 1.1rem;
+      font-weight: 500;
+      color: var(--text-light);
+      margin-bottom: 20px;
+    }
+
+    .hero-degrees {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 28px;
+    }
+
+    .degree-tag {
+      background: white;
+      border: 1px solid var(--gray-200);
+      color: var(--gray-600);
+      font-size: 0.75rem;
+      font-weight: 600;
+      padding: 5px 12px;
+      border-radius: 50px;
+      transition: var(--transition);
+    }
+
+    .degree-tag:hover {
+      border-color: var(--primary);
+      color: var(--primary);
+    }
+
+    .hero-stats {
+      display: flex;
+      gap: 28px;
+      margin-bottom: 32px;
+    }
+
+    .hero-stat {
+      text-align: center;
+    }
+
+    .hero-stat .num {
+      font-size: 1.8rem;
+      font-weight: 800;
+      color: var(--primary);
+      line-height: 1;
+    }
+
+    .hero-stat .label {
+      font-size: 0.72rem;
+      color: var(--text-light);
+      margin-top: 4px;
+    }
+
+    .hero-stat-divider {
+      width: 1px;
+      background: var(--gray-200);
+      align-self: stretch;
+    }
+
+    .hero-btns {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    /* Doctor image card */
+    .hero-img-card {
+      position: relative;
+      width: 340px;
+    }
+
+    .hero-img-bg {
+      width: 100%;
+      aspect-ratio: 3/4;
+      background: linear-gradient(145deg, #d0f0ea, #a8e6da);
+      border-radius: 40px 40px 60px 40px;
+      overflow: hidden;
+      position: relative;
+      box-shadow: var(--shadow-lg);
+    }
+
+    .doctor-avatar-large {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 8rem;
+      color: rgba(13, 158, 126, 0.3);
+      background: linear-gradient(160deg, #c8efe8, #9addd1);
+    }
+
+    .doctor-avatar-large i {
+      filter: drop-shadow(0 4px 12px rgba(13, 158, 126, 0.2));
+    }
+
+    /* Floating info cards */
+    .hero-float-card {
+      position: absolute;
+      background: white;
+      border-radius: var(--radius);
+      padding: 14px 18px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      animation: float 5s ease-in-out infinite;
+    }
+
+    .hero-float-card.card-1 {
+      bottom: 30px;
+      left: -50px;
+      animation-delay: 0s;
+    }
+
+    .hero-float-card.card-2 {
+      top: 40px;
+      right: -40px;
+      animation-delay: 2s;
+    }
+
+    .float-icon {
+      width: 42px;
+      height: 42px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.1rem;
+    }
+
+    .float-icon.green {
+      background: var(--primary-light);
+      color: var(--primary);
+    }
+
+    .float-icon.orange {
+      background: #fff5e0;
+      color: var(--accent);
+    }
+
+    .float-card-text .val {
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: var(--gray-800);
+    }
+
+    .float-card-text .sub {
+      font-size: 0.68rem;
+      color: var(--text-light);
+    }
+
+    /* ===========================
+       ABOUT SECTION
+    =========================== */
+    .about {
+      background: var(--white);
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .about-visual {
+      position: relative;
+    }
+
+    .about-card-main {
+      background: linear-gradient(135deg, var(--primary), #1ac9a0);
+      border-radius: var(--radius);
+      padding: 36px;
+      color: white;
+      box-shadow: var(--shadow-lg);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .about-card-main::before {
+      content: '';
+      position: absolute;
+      top: -40px;
+      right: -40px;
+      width: 160px;
+      height: 160px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 50%;
+    }
+
+    .about-card-main i.big-icon {
+      font-size: 3rem;
+      margin-bottom: 16px;
+      opacity: 0.9;
+    }
+
+    .about-card-main h3 {
+      font-size: 1.3rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .about-card-main p {
+      font-size: 0.88rem;
+      opacity: 0.85;
+      line-height: 1.7;
+    }
+
+    .about-mini-cards {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+      margin-top: 16px;
+    }
+
+    .about-mini-card {
+      background: white;
+      border-radius: var(--radius-sm);
+      padding: 18px;
+      border: 1px solid var(--gray-100);
+      text-align: center;
+      box-shadow: var(--shadow);
+      transition: var(--transition);
+    }
+
+    .about-mini-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-lg);
+      border-color: var(--primary-light);
+    }
+
+    .about-mini-card i {
+      font-size: 1.5rem;
+      color: var(--primary);
+      margin-bottom: 8px;
+    }
+
+    .about-mini-card .num {
+      font-size: 1.5rem;
+      font-weight: 800;
+      color: var(--gray-800);
+    }
+
+    .about-mini-card .label {
+      font-size: 0.72rem;
+      color: var(--text-light);
+    }
+
+    .about-content {}
+
+    .about-summary {
+      font-size: 0.97rem;
+      color: var(--text-light);
+      line-height: 1.8;
+      margin-bottom: 32px;
+    }
+
+    .degrees-list {
+      margin-bottom: 32px;
+    }
+
+    .degrees-list h4 {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--gray-800);
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .degrees-list h4 i {
+      color: var(--primary);
+    }
+
+    .degree-item {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 11px 16px;
+      background: var(--gray-50);
+      border-radius: var(--radius-sm);
+      margin-bottom: 8px;
+      border-left: 3px solid var(--primary);
+      transition: var(--transition);
+    }
+
+    .degree-item:hover {
+      background: var(--primary-light);
+    }
+
+    .degree-item i {
+      color: var(--primary);
+      font-size: 0.85rem;
+    }
+
+    .degree-item span {
+      font-size: 0.88rem;
+      font-weight: 500;
+      color: var(--gray-700);
+    }
+
+    .highlights {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+
+    .highlight-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      padding: 16px;
+      background: var(--gray-50);
+      border-radius: var(--radius-sm);
+      transition: var(--transition);
+      border: 1px solid transparent;
+    }
+
+    .highlight-item:hover {
+      border-color: var(--primary-light);
+      background: white;
+      box-shadow: var(--shadow);
+    }
+
+    .highlight-icon {
+      width: 38px;
+      height: 38px;
+      flex-shrink: 0;
+      background: var(--primary-light);
+      color: var(--primary);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.9rem;
+    }
+
+    .highlight-text .title {
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: var(--gray-800);
+    }
+
+    .highlight-text .sub {
+      font-size: 0.74rem;
+      color: var(--text-light);
+    }
+
+    /* ===========================
+       HOSPITAL / CHAMBER
+    =========================== */
+    .hospital {
+      background: var(--gray-50);
+    }
+
+    .hospital-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 32px;
+      align-items: stretch;
+    }
+
+    .hospital-card {
+      background: white;
+      border-radius: var(--radius);
+      padding: 32px;
+      box-shadow: var(--shadow);
+      border: 1px solid var(--gray-100);
+      transition: var(--transition);
+    }
+
+    .hospital-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .hospital-card .card-header {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 20px;
+    }
+
+    .card-icon {
+      width: 52px;
+      height: 52px;
+      border-radius: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.3rem;
+    }
+
+    .card-icon.green {
+      background: var(--primary-light);
+      color: var(--primary);
+    }
+
+    .card-icon.blue {
+      background: #e8f0fe;
+      color: #4285f4;
+    }
+
+    .hospital-card h3 {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--gray-800);
+      margin-bottom: 4px;
+    }
+
+    .hospital-card .sub-label {
+      font-size: 0.78rem;
+      color: var(--text-light);
+    }
+
+    .info-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      padding: 10px 0;
+      border-bottom: 1px solid var(--gray-100);
+    }
+
+    .info-row:last-child {
+      border-bottom: none;
+    }
+
+    .info-row i {
+      color: var(--primary);
+      margin-top: 3px;
+      font-size: 0.85rem;
+      width: 16px;
+    }
+
+    .info-row .info-text {
+      font-size: 0.88rem;
+      color: var(--gray-600);
+      line-height: 1.5;
+    }
+
+    .info-row .info-text strong {
+      color: var(--gray-800);
+      font-weight: 600;
+    }
+
+    .map-embed {
+      border-radius: var(--radius-sm);
+      overflow: hidden;
+      margin-top: 20px;
+      height: 200px;
+      background: var(--gray-100);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid var(--gray-200);
+      color: var(--text-light);
+      font-size: 0.85rem;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .map-embed i {
+      font-size: 2rem;
+      color: var(--primary);
+      opacity: 0.6;
+    }
+
+    /* ===========================
+       VISITING TIME
+    =========================== */
+    .visiting {
+      background: var(--white);
+    }
+
+    .schedule-card {
+      max-width: 680px;
+      margin: 0 auto;
+      background: linear-gradient(135deg, var(--primary), #1ac9a0);
+      border-radius: var(--radius);
+      padding: 48px;
+      color: white;
+      text-align: center;
+      box-shadow: var(--shadow-lg);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .schedule-card::before {
+      content: '';
+      position: absolute;
+      top: -60px;
+      right: -60px;
+      width: 200px;
+      height: 200px;
+      background: rgba(255, 255, 255, 0.08);
+      border-radius: 50%;
+    }
+
+    .schedule-card::after {
+      content: '';
+      position: absolute;
+      bottom: -40px;
+      left: -40px;
+      width: 140px;
+      height: 140px;
+      background: rgba(255, 255, 255, 0.06);
+      border-radius: 50%;
+    }
+
+    .schedule-icon {
+      font-size: 3rem;
+      margin-bottom: 20px;
+      display: block;
+      position: relative;
+      z-index: 1;
+    }
+
+    .schedule-card h3 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .schedule-time {
+      font-size: 2.5rem;
+      font-weight: 800;
+      margin: 16px 0;
+      position: relative;
+      z-index: 1;
+    }
+
+    .schedule-days {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 28px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .day-chip {
+      background: rgba(255, 255, 255, 0.2);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      backdrop-filter: blur(4px);
+      color: white;
+      font-size: 0.8rem;
+      font-weight: 600;
+      padding: 6px 16px;
+      border-radius: 50px;
+    }
+
+    .serial-info {
+      background: rgba(255, 255, 255, 0.15);
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      border-radius: var(--radius-sm);
+      padding: 20px;
+      margin-top: 4px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .serial-info p {
+      font-size: 0.88rem;
+      opacity: 0.85;
+      margin-bottom: 8px;
+    }
+
+    .serial-numbers {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .serial-num {
+      background: white;
+      color: var(--primary);
+      font-weight: 700;
+      font-size: 0.9rem;
+      padding: 7px 20px;
+      border-radius: 50px;
+    }
+
+    /* ===========================
+       SERVICES
+    =========================== */
+    .services {
+      background: var(--gray-50);
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .service-card {
+      background: white;
+      border-radius: var(--radius);
+      padding: 28px 24px;
+      border: 1px solid var(--gray-100);
+      box-shadow: var(--shadow);
+      transition: var(--transition);
+      cursor: default;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .service-card::before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, var(--primary), #1ac9a0);
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: var(--transition);
+    }
+
+    .service-card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .service-card:hover::before {
+      transform: scaleX(1);
+    }
+
+    .service-icon {
+      width: 56px;
+      height: 56px;
+      background: var(--primary-light);
+      border-radius: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.4rem;
+      color: var(--primary);
+      margin-bottom: 18px;
+      transition: var(--transition);
+    }
+
+    .service-card:hover .service-icon {
+      background: var(--primary);
+      color: white;
+    }
+
+    .service-card h4 {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--gray-800);
+      margin-bottom: 8px;
+    }
+
+    .service-card p {
+      font-size: 0.82rem;
+      color: var(--text-light);
+      line-height: 1.6;
+    }
+
+    /* ===========================
+       APPOINTMENT
+    =========================== */
+    .appointment {
+      background: linear-gradient(145deg, var(--gray-800), #112233);
+      color: white;
+      text-align: center;
+    }
+
+    .appointment .section-label {
+      background: rgba(13, 158, 126, 0.2);
+      color: #4de8c0;
+    }
+
+    .appointment .section-title {
+      color: white;
+    }
+
+    .appointment .section-subtitle {
+      color: rgba(255, 255, 255, 0.6);
+    }
+
+    .appt-card {
+      max-width: 680px;
+      margin: 0 auto;
+      background: rgba(255, 255, 255, 0.07);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      backdrop-filter: blur(8px);
+      border-radius: var(--radius);
+      padding: 48px;
+    }
+
+    .appt-phone-big {
+      font-size: clamp(1.6rem, 4vw, 2.4rem);
+      font-weight: 800;
+      color: var(--primary);
+      margin: 20px 0;
+      letter-spacing: 1px;
+    }
+
+    .appt-phones {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      flex-wrap: wrap;
+      margin-bottom: 28px;
+    }
+
+    .appt-phone-chip {
+      background: rgba(13, 158, 126, 0.15);
+      border: 1px solid rgba(13, 158, 126, 0.3);
+      color: #4de8c0;
+      font-size: 0.95rem;
+      font-weight: 700;
+      padding: 10px 22px;
+      border-radius: 50px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .appt-btns {
+      display: flex;
+      justify-content: center;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    .btn-white {
+      background: white;
+      color: var(--primary);
+    }
+
+    .btn-white:hover {
+      background: var(--primary-light);
+      transform: translateY(-2px);
+    }
+
+    .btn-green {
+      background: var(--primary);
+      color: white;
+      box-shadow: 0 4px 20px rgba(13, 158, 126, 0.4);
+    }
+
+    .btn-green:hover {
+      background: var(--primary-dark);
+      transform: translateY(-2px);
+    }
+
+    .btn-whatsapp {
+      background: #25d366;
+      color: white;
+    }
+
+    .btn-whatsapp:hover {
+      background: #1fb55a;
+      transform: translateY(-2px);
+    }
+
+    /* ===========================
+       CONTACT
+    =========================== */
+    .contact {
+      background: var(--white);
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 24px;
+    }
+
+    .contact-card {
+      background: var(--gray-50);
+      border-radius: var(--radius);
+      padding: 32px 24px;
+      text-align: center;
+      border: 1px solid var(--gray-100);
+      transition: var(--transition);
+    }
+
+    .contact-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-lg);
+      border-color: var(--primary-light);
+    }
+
+    .contact-card .cc-icon {
+      width: 64px;
+      height: 64px;
+      margin: 0 auto 18px;
+      border-radius: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+    }
+
+    .cc-icon.green {
+      background: var(--primary-light);
+      color: var(--primary);
+    }
+
+    .cc-icon.wa {
+      background: #dcfce7;
+      color: #25d366;
+    }
+
+    .cc-icon.loc {
+      background: #fef3e2;
+      color: #f59e0b;
+    }
+
+    .contact-card h4 {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--gray-800);
+      margin-bottom: 8px;
+    }
+
+    .contact-card p {
+      font-size: 0.85rem;
+      color: var(--text-light);
+      line-height: 1.6;
+      margin-bottom: 18px;
+    }
+
+    .contact-card a.btn {
+      justify-content: center;
+      width: 100%;
+    }
+
+    /* ===========================
+       FOOTER
+    =========================== */
+    footer {
+      background: var(--gray-800);
+      color: rgba(255, 255, 255, 0.7);
+      padding: 40px 0 24px;
+    }
+
+    .footer-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-bottom: 24px;
+      margin-bottom: 24px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .footer-brand .name {
+      font-size: 1rem;
+      font-weight: 700;
+      color: white;
+    }
+
+    .footer-brand .spec {
+      font-size: 0.78rem;
+      color: var(--primary);
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .footer-links a {
+      text-decoration: none;
+      color: rgba(255, 255, 255, 0.6);
+      font-size: 0.82rem;
+      transition: var(--transition);
+    }
+
+    .footer-links a:hover {
+      color: var(--primary);
+    }
+
+    .footer-bottom {
+      text-align: center;
+      font-size: 0.78rem;
+      color: rgba(255, 255, 255, 0.4);
+    }
+
+    .footer-bottom span {
+      color: var(--primary);
+    }
+
+    /* ===========================
+       FLOATING BUTTONS
+    =========================== */
+    .floating-buttons {
+      position: fixed;
+      bottom: 28px;
+      right: 24px;
+      z-index: 999;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      align-items: flex-end;
+    }
+
+    .float-btn {
+      width: 54px;
+      height: 54px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.25rem;
+      text-decoration: none;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+      transition: var(--transition);
+      border: none;
+      cursor: pointer;
+    }
+
+    .float-btn:hover {
+      transform: scale(1.12) translateY(-2px);
+    }
+
+    .float-btn.call {
+      background: var(--primary);
+      color: white;
+    }
+
+    .float-btn.wa {
+      background: #25d366;
+      color: white;
+    }
+
+    .float-btn-label {
+      position: absolute;
+      right: 66px;
+      background: var(--gray-800);
+      color: white;
+      font-size: 0.75rem;
+      font-weight: 600;
+      padding: 5px 12px;
+      border-radius: 50px;
+      white-space: nowrap;
+      opacity: 0;
+      pointer-events: none;
+      transition: var(--transition);
+    }
+
+    .float-btn-wrap {
+      position: relative;
+      display: flex;
+      align-items: center;
+    }
+
+    .float-btn-wrap:hover .float-btn-label {
+      opacity: 1;
+    }
+
+    /* Pulse ring */
+    .pulse-ring {
+      position: absolute;
+      width: 54px;
+      height: 54px;
+      border-radius: 50%;
+      border: 2px solid var(--primary);
+      animation: pulse-ring 2s infinite;
+    }
+
+    @keyframes pulse-ring {
+      0% {
+        transform: scale(1);
+        opacity: 0.8;
+      }
+
+      100% {
+        transform: scale(1.7);
+        opacity: 0;
+      }
+    }
+
+    /* ===========================
+       SCROLL ANIMATIONS
+    =========================== */
+    .fade-up {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+
+    .fade-up.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .fade-up-delay-1 {
+      transition-delay: 0.1s;
+    }
+
+    .fade-up-delay-2 {
+      transition-delay: 0.2s;
+    }
+
+    .fade-up-delay-3 {
+      transition-delay: 0.3s;
+    }
+
+    .fade-up-delay-4 {
+      transition-delay: 0.4s;
+    }
+
+    /* ===========================
+       RESPONSIVE
+    =========================== */
+    @media (max-width: 1024px) {
+      .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .contact-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 900px) {
+
+      nav,
+      .nav-btn-group {
+        display: none;
+      }
+
+      .hamburger {
+        display: flex;
+      }
+
+      .hero-grid,
+      .about-grid,
+      .hospital-grid {
+        grid-template-columns: 1fr;
+        gap: 36px;
+      }
+
+      .hero-image-wrapper {
+        order: -1;
+      }
+
+      .hero-img-card {
+        width: 260px;
+      }
+
+      .hero-float-card.card-1,
+      .hero-float-card.card-2 {
+        display: none;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .section {
+        padding: 64px 0;
+      }
+
+      .services-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .highlights {
+        grid-template-columns: 1fr;
+      }
+
+      .about-mini-cards {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .schedule-card {
+        padding: 32px 20px;
+      }
+
+      .appt-card {
+        padding: 32px 20px;
+      }
+
+      .hero-stats {
+        gap: 16px;
+      }
+
+      .schedule-time {
+        font-size: 2rem;
+      }
+
+      .footer-inner {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+  </style>
+</head>
+
+<body class="lang-en">
+
+  <!-- ========== HEADER ========== -->
+  <header id="header">
+    <div class="container">
+      <div class="nav-inner">
+        <a href="#home" class="nav-brand">
+          <div class="nav-brand-avatar"><i class="fas fa-user-doctor"></i></div>
+          <div class="nav-brand-text">
+            <div class="name en">Dr. Prottush Kumar Mondal</div> <br>
+            <div class="name bn" style="display:none">ডা. প্রিতম কুমার মন্ডল</div>
+            <div class="spec en">Respiratory Medicine Specialist</div>
+            <div class="spec bn" style="display:none">শ্বাসতন্ত্র রোগ বিশেষজ্ঞ</div>
+          </div>
+        </a>
+
+        <nav>
+          <a href="#about" class="en">About</a>
+          <a href="#about" class="bn" style="display:none">পরিচিতি</a>
+          <a href="#hospital" class="en">Chamber</a>
+          <a href="#hospital" class="bn" style="display:none">চেম্বার</a>
+          <a href="#services" class="en">Services</a>
+          <a href="#services" class="bn" style="display:none">সেবা</a>
+          <a href="#appointment" class="en">Appointment</a>
+          <a href="#appointment" class="bn" style="display:none">অ্যাপয়েন্টমেন্ট</a>
+          <a href="#contact" class="en">Contact</a>
+          <a href="#contact" class="bn" style="display:none">যোগাযোগ</a>
+        </nav>
+
+        <div class="nav-actions">
+          <!-- <div class="lang-toggle">
+            <button class="lang-btn active" id="btn-en" onclick="setLang('en')">EN</button>
+            <button class="lang-btn" id="btn-bn" onclick="setLang('bn')">বাং</button>
+          </div> -->
+          <a href="tel:10606" class="btn btn-outline" style="padding:8px 16px;">
+            <i class="fas fa-phone"></i>
+            <span class="en">Call</span>
+            <span class="bn" style="display:none">কল</span>
+          </a>
+          <a href="#appointment" class="btn btn-primary nav-btn-group">
+            <i class="fas fa-calendar-check"></i>
+            <span class="en">Appointment</span>
+            <span class="bn" style="display:none">অ্যাপয়েন্টমেন্ট</span>
+          </a>
+          <button class="hamburger" id="hamburger" onclick="toggleMenu()">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#about" onclick="closeMenu()"><span class="en">About</span><span class="bn"
+        style="display:none">পরিচিতি</span></a>
+    <a href="#hospital" onclick="closeMenu()"><span class="en">Chamber</span><span class="bn"
+        style="display:none">চেম্বার</span></a>
+    <a href="#visiting" onclick="closeMenu()"><span class="en">Visiting Hours</span><span class="bn"
+        style="display:none">ভিজিটিং সময়</span></a>
+    <a href="#services" onclick="closeMenu()"><span class="en">Services</span><span class="bn"
+        style="display:none">সেবাসমূহ</span></a>
+    <a href="#appointment" onclick="closeMenu()"><span class="en">Appointment</span><span class="bn"
+        style="display:none">অ্যাপয়েন্টমেন্ট</span></a>
+    <a href="#contact" onclick="closeMenu()"><span class="en">Contact</span><span class="bn"
+        style="display:none">যোগাযোগ</span></a>
+    <div class="mobile-menu-actions">
+      <a href="tel:10606" class="btn btn-outline"><i class="fas fa-phone"></i> 10606</a>
+      <a href="https://wa.me/8801766661361" class="btn btn-whatsapp"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+    </div>
+  </div>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero" id="home">
+    <div class="hero-deco hero-deco-1"></div>
+    <div class="hero-deco hero-deco-2"></div>
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content fade-up">
+          <div class="hero-badge">
+            <i class="fas fa-lungs"></i>
+            <span class="en">Respiratory Medicine Specialist</span>
+            <span class="bn" style="display:none">শ্বাসতন্ত্র রোগ বিশেষজ্ঞ</span>
+          </div>
+          <h1>
+            <span class="en">Dr. Prottush <br>Kumar <span>Mondal</span></span>
+            <span class="bn" style="display:none">ডা. প্রিতম<br>কুমার <span>মন্ডল</span></span>
+          </h1>
+          <p class="hero-specialty">
+            <i class="fas fa-hospital" style="color:var(--primary);margin-right:6px"></i>
+            <span class="en">Assistant Professor, NIDCH · Mohakhali, Dhaka</span>
+            <span class="bn" style="display:none">সহকারী অধ্যাপক, NIDCH · মহাখালী, ঢাকা</span>
+          </p>
+          <div class="hero-degrees">
+            <span class="degree-tag">MBBS</span>
+            <span class="degree-tag">BCS (Health)</span>
+            <span class="degree-tag">MD (Respiratory Medicine)</span>
+            <span class="degree-tag">MRCP (UK)</span>
+            <span class="degree-tag">FCCP</span>
+          </div>
+          <div class="hero-stats">
+            <div class="hero-stat">
+              <div class="num">12+</div>
+              <div class="label en">Years Exp.</div>
+              <div class="label bn" style="display:none">বছরের অভিজ্ঞতা</div>
+            </div>
+            <div class="hero-stat-divider"></div>
+            <div class="hero-stat">
+              <div class="num">5K+</div>
+              <div class="label en">Patients</div>
+              <div class="label bn" style="display:none">রোগী</div>
+            </div>
+            <div class="hero-stat-divider"></div>
+            <div class="hero-stat">
+              <div class="num">6</div>
+              <div class="label en">Services</div>
+              <div class="label bn" style="display:none">সেবা</div>
+            </div>
+          </div>
+          <div class="hero-btns">
+            <a href="#appointment" class="btn btn-primary">
+              <i class="fas fa-calendar-check"></i>
+              <span class="en">Book Appointment</span>
+              <span class="bn" style="display:none">অ্যাপয়েন্টমেন্ট নিন</span>
+            </a>
+            <a href="tel:10606" class="btn btn-outline">
+              <i class="fas fa-phone"></i>
+              <span class="en">Call Now</span>
+              <span class="bn" style="display:none">এখনই কল করুন</span>
+            </a>
+          </div>
+        </div>
+        <div class="hero-image-wrapper fade-up fade-up-delay-2">
+          <div class="hero-img-card">
+
+
+            <div class="doctor-avatar-large">
+              <img src="image/profile_image.jpg" alt="Dr. Prottush Kumar Mondal"
+                style="width: 100%; height: 100%; object-fit: cover; object-position: center center;">
+            </div>
+
+            <div class="hero-float-card card-1">
+              <div class="float-icon green"><i class="fas fa-stethoscope"></i></div>
+              <div class="float-card-text">
+                <div class="val en">NIDCH</div>
+                <div class="val bn" style="display:none">NIDCH</div>
+                <div class="sub en">Mohakhali, Dhaka</div>
+                <div class="sub bn" style="display:none">মহাখালী, ঢাকা</div>
+              </div>
+            </div>
+            <div class="hero-float-card card-2">
+              <div class="float-icon orange"><i class="fas fa-clock"></i></div>
+              <div class="float-card-text">
+                <div class="val en">4–6 PM</div>
+                <div class="val bn" style="display:none">বিকাল ৪–৬টা</div>
+                <div class="sub en">Sat – Wed</div>
+                <div class="sub bn" style="display:none">শনি – বুধবার</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT ========== -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-visual fade-up">
+          <div class="about-card-main">
+            <i class="fas fa-lungs big-icon"></i>
+            <h3 class="en">Expert in Respiratory Care</h3>
+            <h3 class="bn" style="display:none">শ্বাসতন্ত্র রোগ বিশেষজ্ঞ</h3>
+            <p class="en">Dedicated to providing world-class care for all respiratory conditions including Asthma, COPD,
+              Tuberculosis, and complex chest diseases.</p>
+            <p class="bn" style="display:none">অ্যাজমা, COPD, যক্ষ্মা এবং জটিল বুকের রোগসহ সকল শ্বাসতন্ত্র সমস্যায়
+              বিশ্বমানের চিকিৎসা প্রদানে প্রতিশ্রুতিবদ্ধ।</p>
+          </div>
+          <div class="about-mini-cards">
+            <div class="about-mini-card">
+              <i class="fas fa-user-doctor"></i>
+              <div class="num">12+</div>
+              <div class="label en">Years Experience</div>
+              <div class="label bn" style="display:none">বছরের অভিজ্ঞতা</div>
+            </div>
+            <div class="about-mini-card">
+              <i class="fas fa-hospital"></i>
+              <div class="num">NIDCH</div>
+              <div class="label en">Government Hospital</div>
+              <div class="label bn" style="display:none">সরকারি হাসপাতাল</div>
+            </div>
+            <div class="about-mini-card">
+              <i class="fas fa-award"></i>
+              <div class="num">MRCP</div>
+              <div class="label en">UK Certified</div>
+              <div class="label bn" style="display:none">যুক্তরাজ্য সার্টিফাইড</div>
+            </div>
+            <div class="about-mini-card">
+              <i class="fas fa-globe"></i>
+              <div class="num">FCCP</div>
+              <div class="label en">International</div>
+              <div class="label bn" style="display:none">আন্তর্জাতিক</div>
+            </div>
+          </div>
+        </div>
+        <div class="about-content fade-up fade-up-delay-2">
+          <span class="section-label en">About Doctor</span>
+          <span class="section-label bn" style="display:none">চিকিৎসক পরিচিতি</span>
+          <h2 class="section-title en">Dr. Prottush Kumar Mondal</h2>
+          <h2 class="section-title bn" style="display:none">ডা. প্রিতম কুমার মন্ডল</h2>
+          <p class="about-summary en">Dr. Prottush Kumar Mondal is a highly qualified Respiratory Medicine Specialist
+            currently serving as Assistant Professor at the National Institute of Diseases of the Chest & Hospital
+            (NIDCH), Mohakhali, Dhaka. He holds prestigious UK-based qualification MRCP and international fellowship
+            FCCP, with specialized expertise in treating all pulmonary and chest diseases.</p>
+          <p class="about-summary bn" style="display:none">ডা. প্রিতম কুমার মন্ডল একজন অত্যন্ত যোগ্যতাসম্পন্ন
+            শ্বাসতন্ত্র রোগ বিশেষজ্ঞ, যিনি বর্তমানে জাতীয় বক্ষব্যাধি ইন্সটিটিউট ও হাসপাতাল (NIDCH), মহাখালী, ঢাকায়
+            সহকারী অধ্যাপক হিসেবে কর্মরত আছেন। তিনি যুক্তরাজ্যের MRCP এবং আন্তর্জাতিক FCCP ফেলোশিপধারী একজন দক্ষ
+            চিকিৎসক।</p>
+
+          <div class="degrees-list">
+            <h4><i class="fas fa-graduation-cap"></i>
+              <span class="en">Academic Qualifications</span>
+              <span class="bn" style="display:none">শিক্ষাগত যোগ্যতা</span>
+            </h4>
+            <div class="degree-item"><i class="fas fa-circle-check"></i><span>MBBS</span></div>
+            <div class="degree-item"><i class="fas fa-circle-check"></i><span>BCS (Health)</span></div>
+            <div class="degree-item"><i class="fas fa-circle-check"></i><span>MD (Respiratory Medicine)</span></div>
+            <div class="degree-item"><i class="fas fa-circle-check"></i><span>MRCP (UK)</span></div>
+            <div class="degree-item"><i class="fas fa-circle-check"></i><span>FCCP (Fellow of the American College of
+                Chest Physicians)</span></div>
+          </div>
+
+          <div class="highlights">
+            <div class="highlight-item">
+              <div class="highlight-icon"><i class="fas fa-hospital"></i></div>
+              <div class="highlight-text">
+                <div class="title en">NIDCH</div>
+                <div class="title bn" style="display:none">NIDCH</div>
+                <div class="sub en">Assistant Professor</div>
+                <div class="sub bn" style="display:none">সহকারী অধ্যাপক</div>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <div class="highlight-icon"><i class="fas fa-award"></i></div>
+              <div class="highlight-text">
+                <div class="title en">UK Qualified</div>
+                <div class="title bn" style="display:none">UK যোগ্যতাপ্রাপ্ত</div>
+                <div class="sub en">MRCP (UK)</div>
+                <div class="sub bn" style="display:none">MRCP (UK)</div>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <div class="highlight-icon"><i class="fas fa-globe"></i></div>
+              <div class="highlight-text">
+                <div class="title en">International</div>
+                <div class="title bn" style="display:none">আন্তর্জাতিক</div>
+                <div class="sub en">FCCP Fellowship</div>
+                <div class="sub bn" style="display:none">FCCP ফেলোশিপ</div>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <div class="highlight-icon"><i class="fas fa-microscope"></i></div>
+              <div class="highlight-text">
+                <div class="title en">Specialized</div>
+                <div class="title bn" style="display:none">বিশেষজ্ঞ</div>
+                <div class="sub en">Pulmonary & Chest</div>
+                <div class="sub bn" style="display:none">ফুসফুস ও বুক রোগ</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== HOSPITAL & CHAMBER ========== -->
+  <section class="hospital section" id="hospital">
+    <div class="container">
+      <div style="text-align:center; margin-bottom:48px">
+        <span class="section-label en">Work Places</span>
+        <span class="section-label bn" style="display:none">কর্মস্থল</span>
+        <h2 class="section-title fade-up en">Hospital & Chamber</h2>
+        <h2 class="section-title fade-up bn" style="display:none">হাসপাতাল ও চেম্বার</h2>
+        <p class="section-subtitle fade-up en">Find us at these locations for consultation and treatment</p>
+        <p class="section-subtitle fade-up bn" style="display:none">পরামর্শ ও চিকিৎসার জন্য এই স্থানগুলোতে আমাদের খুঁজে
+          পাবেন</p>
+      </div>
+      <div class="hospital-grid">
+        <!-- Hospital -->
+        <div class="hospital-card fade-up">
+          <div class="card-header">
+            <div class="card-icon green"><i class="fas fa-hospital"></i></div>
+            <div>
+              <h3 class="en">NIDCH – Main Hospital</h3>
+              <h3 class="bn" style="display:none">NIDCH – মূল হাসপাতাল</h3>
+              <div class="sub-label en">Government Institution</div>
+              <div class="sub-label bn" style="display:none">সরকারি প্রতিষ্ঠান</div>
+            </div>
+          </div>
+          <div class="info-row">
+            <i class="fas fa-building-columns"></i>
+            <div class="info-text">
+              <strong class="en">National Institute of Diseases of the Chest & Hospital</strong>
+              <strong class="bn" style="display:none">জাতীয় বক্ষব্যাধি ইন্সটিটিউট ও হাসপাতাল</strong>
+            </div>
+          </div>
+          <div class="info-row">
+            <i class="fas fa-map-marker-alt"></i>
+            <div class="info-text">
+              <span class="en">Mohakhali, Dhaka, Bangladesh</span>
+              <span class="bn" style="display:none">মহাখালী, ঢাকা, বাংলাদেশ</span>
+            </div>
+          </div>
+          <div class="info-row">
+            <i class="fas fa-user-tie"></i>
+            <div class="info-text">
+              <span class="en"><strong>Position:</strong> Assistant Professor, Respiratory Medicine</span>
+              <span class="bn" style="display:none"><strong>পদবি:</strong> সহকারী অধ্যাপক, শ্বাসতন্ত্র বিভাগ</span>
+            </div>
+          </div>
+          <div class="map-embed">
+            <i class="fas fa-map-location-dot"></i>
+            <span class="en">NIDCH, Mohakhali, Dhaka</span>
+            <span class="bn" style="display:none">NIDCH, মহাখালী, ঢাকা</span>
+          </div>
+        </div>
+        <!-- Chamber -->
+        <div class="hospital-card fade-up fade-up-delay-2">
+          <div class="card-header">
+            <div class="card-icon blue"><i class="fas fa-clinic-medical"></i></div>
+            <div>
+              <h3 class="en">Labaid Diagnostics</h3>
+              <h3 class="bn" style="display:none">ল্যাবএইড ডায়াগনস্টিকস</h3>
+              <div class="sub-label en">Private Chamber</div>
+              <div class="sub-label bn" style="display:none">প্রাইভেট চেম্বার</div>
+            </div>
+          </div>
+          <div class="info-row">
+            <i class="fas fa-building"></i>
+            <div class="info-text">
+              <strong class="en">Labaid Diagnostics Ltd.</strong>
+              <strong class="bn" style="display:none">ল্যাবএইড ডায়াগনস্টিকস লিমিটেড</strong>
+            </div>
+          </div>
+          <div class="info-row">
+            <i class="fas fa-map-marker-alt"></i>
+            <div class="info-text">
+              <span class="en">Kalabagan, Dhaka, Bangladesh</span>
+              <span class="bn" style="display:none">কলাবাগান, ঢাকা, বাংলাদেশ</span>
+            </div>
+          </div>
+          <div class="info-row">
+            <i class="fas fa-clock"></i>
+            <div class="info-text">
+              <span class="en"><strong>Sat – Wed:</strong> 4:00 PM – 6:00 PM</span>
+              <span class="bn" style="display:none"><strong>শনি – বুধ:</strong> বিকাল ৪:০০ – ৬:০০ টা</span>
+            </div>
+          </div>
+          <div class="info-row">
+            <i class="fas fa-phone"></i>
+            <div class="info-text">
+              <strong>10606</strong> &nbsp;|&nbsp; <strong>01766661361</strong>
+            </div>
+          </div>
+          <div class="map-embed">
+            <i class="fas fa-map-location-dot"></i>
+            <span class="en">Labaid Diagnostics, Kalabagan, Dhaka</span>
+            <span class="bn" style="display:none">ল্যাবএইড ডায়াগনস্টিকস, কলাবাগান, ঢাকা</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== VISITING HOURS ========== -->
+  <section class="visiting section" id="visiting">
+    <div class="container">
+      <div style="text-align:center; margin-bottom:48px">
+        <span class="section-label en">Schedule</span>
+        <span class="section-label bn" style="display:none">সময়সূচি</span>
+        <h2 class="section-title fade-up en">Patient Visiting Hours</h2>
+        <h2 class="section-title fade-up bn" style="display:none">রোগী দেখার সময়</h2>
+        <p class="section-subtitle fade-up en">Chamber at Labaid Diagnostics, Kalabagan, Dhaka</p>
+        <p class="section-subtitle fade-up bn" style="display:none">ল্যাবএইড ডায়াগনস্টিকস, কলাবাগান, ঢাকা</p>
+      </div>
+      <div class="schedule-card fade-up" style="position:relative;z-index:1">
+        <span class="schedule-icon"><i class="fas fa-clock"></i></span>
+        <h3 class="en">Weekly Chamber Schedule</h3>
+        <h3 class="bn" style="display:none">সাপ্তাহিক চেম্বার সময়সূচি</h3>
+        <div class="schedule-time">4:00 PM – 6:00 PM</div>
+        <div class="schedule-days">
+          <span class="day-chip en">Saturday</span>
+          <span class="day-chip en">Sunday</span>
+          <span class="day-chip en">Monday</span>
+          <span class="day-chip en">Tuesday</span>
+          <span class="day-chip en">Wednesday</span>
+          <span class="day-chip bn" style="display:none">শনিবার</span>
+          <span class="day-chip bn" style="display:none">রবিবার</span>
+          <span class="day-chip bn" style="display:none">সোমবার</span>
+          <span class="day-chip bn" style="display:none">মঙ্গলবার</span>
+          <span class="day-chip bn" style="display:none">বুধবার</span>
+        </div>
+        <div class="serial-info">
+          <p class="en"><i class="fas fa-phone-volume" style="margin-right:6px"></i>For serial / appointment, please
+            call:</p>
+          <p class="bn" style="display:none"><i class="fas fa-phone-volume" style="margin-right:6px"></i>সিরিয়াল /
+            অ্যাপয়েন্টমেন্টের জন্য কল করুন:</p>
+          <div class="serial-numbers">
+            <a href="tel:10606" class="serial-num">📞 10606</a>
+            <a href="tel:01766661361" class="serial-num">📞 01766661361</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SERVICES ========== -->
+  <section class="services section" id="services">
+    <div class="container">
+      <div style="text-align:center; margin-bottom:48px">
+        <span class="section-label en">Expertise</span>
+        <span class="section-label bn" style="display:none">বিশেষত্ব</span>
+        <h2 class="section-title fade-up en">Medical Services</h2>
+        <h2 class="section-title fade-up bn" style="display:none">চিকিৎসা সেবাসমূহ</h2>
+        <p class="section-subtitle fade-up en">Comprehensive respiratory care covering all lung and chest conditions</p>
+        <p class="section-subtitle fade-up bn" style="display:none">সকল ফুসফুস ও বুকের রোগে সম্পূর্ণ শ্বাসতন্ত্র চিকিৎসা
+          সেবা</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card fade-up">
+          <div class="service-icon"><i class="fas fa-wind"></i></div>
+          <h4 class="en">Asthma Treatment</h4>
+          <h4 class="bn" style="display:none">অ্যাজমা চিকিৎসা</h4>
+          <p class="en">Complete diagnosis and management of bronchial asthma, exercise-induced asthma and allergic
+            asthma in all age groups.</p>
+          <p class="bn" style="display:none">ব্রংকিয়াল অ্যাজমা, ব্যায়াম-প্রবণ এবং অ্যালার্জিক অ্যাজমার সম্পূর্ণ
+            রোগনির্ণয় ও ব্যবস্থাপনা।</p>
+        </div>
+        <div class="service-card fade-up fade-up-delay-1">
+          <div class="service-icon"><i class="fas fa-lungs"></i></div>
+          <h4 class="en">COPD Management</h4>
+          <h4 class="bn" style="display:none">COPD ব্যবস্থাপনা</h4>
+          <p class="en">Expert care for Chronic Obstructive Pulmonary Disease including diagnosis, pulmonary rehab and
+            long-term management.</p>
+          <p class="bn" style="display:none">COPD রোগনির্ণয়, পালমোনারি পুনর্বাসন এবং দীর্ঘমেয়াদী ব্যবস্থাপনায়
+            বিশেষজ্ঞ সেবা।</p>
+        </div>
+        <div class="service-card fade-up fade-up-delay-2">
+          <div class="service-icon"><i class="fas fa-allergies"></i></div>
+          <h4 class="en">Allergy & Rhinitis</h4>
+          <h4 class="bn" style="display:none">অ্যালার্জি ও রাইনাইটিস</h4>
+          <p class="en">Comprehensive evaluation and treatment of respiratory allergies, hay fever, and allergic
+            rhinitis conditions.</p>
+          <p class="bn" style="display:none">শ্বাসতন্ত্রের অ্যালার্জি, হে ফিভার ও অ্যালার্জিক রাইনাইটিসের সম্পূর্ণ
+            মূল্যায়ন ও চিকিৎসা।</p>
+        </div>
+        <div class="service-card fade-up">
+          <div class="service-icon"><i class="fas fa-bacterium"></i></div>
+          <h4 class="en">Tuberculosis (TB)</h4>
+          <h4 class="bn" style="display:none">যক্ষ্মা (TB)</h4>
+          <p class="en">Expert diagnosis and DOTS treatment for pulmonary and extra-pulmonary tuberculosis, including
+            drug-resistant TB.</p>
+          <p class="bn" style="display:none">পালমোনারি ও এক্সট্রা-পালমোনারি যক্ষ্মার বিশেষজ্ঞ রোগনির্ণয় এবং DOTS
+            চিকিৎসা।</p>
+        </div>
+        <div class="service-card fade-up fade-up-delay-1">
+          <div class="service-icon"><i class="fas fa-head-side-cough"></i></div>
+          <h4 class="en">Breathing Disorders</h4>
+          <h4 class="bn" style="display:none">শ্বাসকষ্ট সমস্যা</h4>
+          <p class="en">Diagnosis and treatment of shortness of breath, sleep apnea, pulmonary hypertension and
+            interstitial lung diseases.</p>
+          <p class="bn" style="display:none">শ্বাসকষ্ট, স্লিপ অ্যাপনিয়া, পালমোনারি হাইপারটেনশন ও ইন্টারস্টিশিয়াল
+            ফুসফুস রোগের চিকিৎসা।</p>
+        </div>
+        <div class="service-card fade-up fade-up-delay-2">
+          <div class="service-icon"><i class="fas fa-virus-covid"></i></div>
+          <h4 class="en">Chest Infections</h4>
+          <h4 class="bn" style="display:none">বুকের সংক্রমণ</h4>
+          <p class="en">Treatment of pneumonia, bronchitis, pleurisy and post-COVID respiratory complications using
+            advanced protocols.</p>
+          <p class="bn" style="display:none">নিউমোনিয়া, ব্রংকাইটিস, প্লুরিসি এবং পোস্ট-কোভিড শ্বাসতন্ত্র জটিলতার উন্নত
+            চিকিৎসা।</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== APPOINTMENT ========== -->
+  <section class="appointment section" id="appointment">
+    <div class="container">
+      <span class="section-label en" style="display:block;text-align:center;margin-bottom:14px">Book Now</span>
+      <span class="section-label bn" style="display:none;text-align:center;margin-bottom:14px">এখনই বুক করুন</span>
+      <h2 class="section-title fade-up" style="text-align:center">
+        <span class="en">Book Your Appointment</span>
+        <span class="bn" style="display:none">আপনার অ্যাপয়েন্টমেন্ট বুক করুন</span>
+      </h2>
+      <p class="section-subtitle fade-up" style="text-align:center">
+        <span class="en">Call us now or WhatsApp for a quick appointment at Labaid Diagnostics, Kalabagan</span>
+        <span class="bn" style="display:none">ল্যাবএইড ডায়াগনস্টিকস, কলাবাগানে দ্রুত অ্যাপয়েন্টমেন্টের জন্য এখনই কল
+          করুন বা WhatsApp করুন</span>
+      </p>
+      <div class="appt-card fade-up">
+        <i class="fas fa-phone-volume" style="font-size:2.5rem;color:var(--primary);margin-bottom:16px"></i>
+        <p style="color:rgba(255,255,255,0.6);font-size:0.88rem;margin-bottom:8px">
+          <span class="en">Serial / Appointment Numbers</span>
+          <span class="bn" style="display:none">সিরিয়াল / অ্যাপয়েন্টমেন্ট নম্বর</span>
+        </p>
+        <div class="appt-phones">
+          <a href="tel:10606" class="appt-phone-chip"><i class="fas fa-phone"></i> 10606</a>
+          <a href="tel:01766661361" class="appt-phone-chip"><i class="fas fa-mobile-alt"></i> 01766661361</a>
+        </div>
+        <p style="color:rgba(255,255,255,0.5);font-size:0.82rem;margin-bottom:24px">
+          <i class="fas fa-clock" style="margin-right:6px;color:var(--primary)"></i>
+          <span class="en">Saturday – Wednesday | 4:00 PM – 6:00 PM</span>
+          <span class="bn" style="display:none">শনিবার – বুধবার | বিকাল ৪:০০ – ৬:০০ টা</span>
+        </p>
+        <div class="appt-btns">
+          <a href="tel:10606" class="btn btn-green">
+            <i class="fas fa-phone"></i>
+            <span class="en">Call 10606</span>
+            <span class="bn" style="display:none">কল করুন 10606</span>
+          </a>
+          <a href="tel:01766661361" class="btn btn-white">
+            <i class="fas fa-mobile-alt"></i>
+            01766661361
+          </a>
+          <a href="https://wa.me/8801766661361" class="btn btn-whatsapp" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+            WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT ========== -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div style="text-align:center; margin-bottom:48px">
+        <span class="section-label en">Get In Touch</span>
+        <span class="section-label bn" style="display:none">যোগাযোগ করুন</span>
+        <h2 class="section-title fade-up en">Contact Information</h2>
+        <h2 class="section-title fade-up bn" style="display:none">যোগাযোগের তথ্য</h2>
+        <p class="section-subtitle fade-up en">Reach out for appointments or inquiries</p>
+        <p class="section-subtitle fade-up bn" style="display:none">অ্যাপয়েন্টমেন্ট বা যেকোনো জিজ্ঞাসায় যোগাযোগ করুন
+        </p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-card fade-up">
+          <div class="cc-icon green"><i class="fas fa-phone"></i></div>
+          <h4 class="en">Phone Numbers</h4>
+          <h4 class="bn" style="display:none">ফোন নম্বর</h4>
+          <p class="en">Call for serial or appointment during visiting hours</p>
+          <p class="bn" style="display:none">ভিজিটিং সময়ে সিরিয়াল বা অ্যাপয়েন্টমেন্টের জন্য কল করুন</p>
+          <a href="tel:10606" class="btn btn-primary">
+            <i class="fas fa-phone"></i> 10606
+          </a>
+          <a href="tel:01766661361" class="btn btn-outline" style="margin-top:10px;width:100%;justify-content:center">
+            <i class="fas fa-mobile-alt"></i> 01766661361
+          </a>
+        </div>
+        <div class="contact-card fade-up fade-up-delay-1">
+          <div class="cc-icon wa"><i class="fab fa-whatsapp"></i></div>
+          <h4 class="en">WhatsApp</h4>
+          <h4 class="bn" style="display:none">হোয়াটসঅ্যাপ</h4>
+          <p class="en">Send a message via WhatsApp for quick response and appointment booking</p>
+          <p class="bn" style="display:none">দ্রুত সাড়া ও অ্যাপয়েন্টমেন্টের জন্য WhatsApp-এ বার্তা পাঠান</p>
+          <a href="https://wa.me/8801766661361" class="btn btn-whatsapp" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+            <span class="en">WhatsApp Now</span>
+            <span class="bn" style="display:none">WhatsApp করুন</span>
+          </a>
+        </div>
+        <div class="contact-card fade-up fade-up-delay-2">
+          <div class="cc-icon loc"><i class="fas fa-map-marker-alt"></i></div>
+          <h4 class="en">Chamber Location</h4>
+          <h4 class="bn" style="display:none">চেম্বারের ঠিকানা</h4>
+          <p class="en">Labaid Diagnostics Ltd., Kalabagan, Dhaka, Bangladesh</p>
+          <p class="bn" style="display:none">ল্যাবএইড ডায়াগনস্টিকস লিমিটেড, কলাবাগান, ঢাকা, বাংলাদেশ</p>
+          <a href="https://maps.google.com/?q=Labaid+Diagnostics+Kalabagan+Dhaka" class="btn btn-outline"
+            target="_blank">
+            <i class="fas fa-map-location-dot"></i>
+            <span class="en">View on Map</span>
+            <span class="bn" style="display:none">ম্যাপে দেখুন</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <div class="name en">Dr. Prottush Kumar Mondal</div>
+          <div class="name bn" style="display:none">ডা. প্রিতম কুমার মন্ডল</div>
+          <div class="spec en">MBBS, BCS (Health), MD, MRCP (UK), FCCP</div>
+          <div class="spec bn" style="display:none">MBBS, BCS (Health), MD, MRCP (UK), FCCP</div>
+          <div style="font-size:0.75rem;margin-top:4px;color:rgba(255,255,255,0.4)">
+            <span class="en">Respiratory Medicine Specialist</span>
+            <span class="bn" style="display:none">শ্বাসতন্ত্র রোগ বিশেষজ্ঞ</span>
+          </div>
+        </div>
+        <div class="footer-links">
+          <a href="#about"><span class="en">About</span><span class="bn" style="display:none">পরিচিতি</span></a>
+          <a href="#hospital"><span class="en">Chamber</span><span class="bn" style="display:none">চেম্বার</span></a>
+          <a href="#services"><span class="en">Services</span><span class="bn" style="display:none">সেবা</span></a>
+          <a href="#appointment"><span class="en">Appointment</span><span class="bn"
+              style="display:none">অ্যাপয়েন্টমেন্ট</span></a>
+          <a href="#contact"><span class="en">Contact</span><span class="bn" style="display:none">যোগাযোগ</span></a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span class="en">© 2025 Dr. Prottush Kumar Mondal. All rights reserved. | NIDCH, Mohakhali &amp; Labaid
+          Diagnostics, Kalabagan, Dhaka</span>
+        <span class="bn" style="display:none">© ২০২৫ ডা. প্রিতম কুমার মন্ডল। সর্বস্বত্ব সংরক্ষিত। | NIDCH, মহাখালী এবং
+          ল্যাবএইড ডায়াগনস্টিকস, কলাবাগান, ঢাকা</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========== FLOATING BUTTONS ========== -->
+  <div class="floating-buttons">
+    <div class="float-btn-wrap">
+      <span class="float-btn-label en">WhatsApp</span>
+      <span class="float-btn-label bn" style="display:none">হোয়াটসঅ্যাপ</span>
+      <a href="https://wa.me/8801766661361" class="float-btn wa" target="_blank" title="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+    </div>
+    <div class="float-btn-wrap">
+      <span class="float-btn-label en">Call Now</span>
+      <span class="float-btn-label bn" style="display:none">এখনই কল</span>
+      <div class="pulse-ring"></div>
+      <a href="tel:10606" class="float-btn call" title="Call 10606">
+        <i class="fas fa-phone"></i>
+      </a>
+    </div>
+  </div>
+
+  <!-- ========== JAVASCRIPT ========== -->
+  <script>
+    /* ---- Language toggle ---- */
+    function setLang(lang) {
+      document.body.className = 'lang-' + lang;
+      document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+      document.getElementById('btn-bn').classList.toggle('active', lang === 'bn');
+      document.documentElement.lang = lang === 'bn' ? 'bn' : 'en';
+    }
+
+    /* ---- Hamburger menu ---- */
+    function toggleMenu() {
+      const menu = document.getElementById('mobileMenu');
+      const btn = document.getElementById('hamburger');
+      menu.classList.toggle('open');
+      btn.classList.toggle('open');
+    }
+    function closeMenu() {
+      document.getElementById('mobileMenu').classList.remove('open');
+      document.getElementById('hamburger').classList.remove('open');
+    }
+
+    /* ---- Sticky header ---- */
+    window.addEventListener('scroll', () => {
+      const header = document.getElementById('header');
+      header.classList.toggle('scrolled', window.scrollY > 20);
+    });
+
+    /* ---- Scroll animations (IntersectionObserver) ---- */
+    const fadeEls = document.querySelectorAll('.fade-up');
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('visible');
+          io.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    fadeEls.forEach(el => io.observe(el));
+
+    /* ---- Active nav highlight ---- */
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('nav a');
+    window.addEventListener('scroll', () => {
+      let current = '';
+      sections.forEach(sec => {
+        if (window.scrollY >= sec.offsetTop - 120) current = sec.id;
+      });
+      navLinks.forEach(a => {
+        a.classList.toggle('active', a.getAttribute('href') === '#' + current);
+      });
+    });
+
+    /* ---- Smooth close mobile menu on link click ---- */
+    document.querySelectorAll('.mobile-menu a').forEach(a => {
+      a.addEventListener('click', closeMenu);
+    });
+
+    /* ---- Init ---- */
+    setLang('en');
+  </script>
+</body>
+
+</html>
